@@ -8,11 +8,11 @@ var destructivelyAddElementToBeginningOfArray=(array,element) =>{
   return array;
 }
 var addElementToEndOfArray= (array,element) =>{
-  array.push(element);
+  array=[...array,element];
   return array;
 }
 var destructivelyAddElementToEndOfArray= (array,element) =>{
-  array=[...array,element];
+  array.push(element);
   return array;
 }
 var accessElementInArray= (array,index) =>{
